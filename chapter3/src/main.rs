@@ -1,6 +1,4 @@
 fn main() {
-    let mut x = 5;
-    println!("The value of x is: {x}");
-    x = 6;
-    println!("The value of x is: {x}");
+    const STANDARD_GRAVITY: f32 = 9.80665;
+    println!("Standard gravity is {STANDARD_GRAVITY} m/s^2");
 }

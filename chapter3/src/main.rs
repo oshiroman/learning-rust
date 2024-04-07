@@ -1,4 +1,15 @@
 fn main() {
-    const STANDARD_GRAVITY: f32 = 9.80665;
-    println!("Standard gravity is {STANDARD_GRAVITY} m/s^2");
+    let x = 5;
+    let x = x + 1;
+
+    println!("The value of x is: {x}");
+
+    {
+        let x = x * 2;
+        println!("The value of x in the inner scope is: {x}");
+    }
+
+    let x = x + 2;
+
+    println!("The value of x is: {x}");
 }

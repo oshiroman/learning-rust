@@ -25,6 +25,38 @@ fn main() {
     // remainder
     let remainder = 341 % 17;
     println!("[remainder] {remainder}");
+
+    // boolean
+    let t = true;
+    let f: bool = false;
+    println!("[true] {t} [false] {f}");
+
+    // character
+    let c = 'c';
+    let r = 'ℝ';
+    let zzz = '💤';
+    println!("{c} {r} {zzz}");
+
+    // tuple
+    let tuple: (i32, f64, i8) = (2119, 9.8, -3);
+    let (a, b, c) = tuple;
+    println!("a: {a}, b: {b}, c: {c}");
+
+    let tup = ("PERFECT", 100, false);
+    let perfect = tup.0;
+    let one_hundred = tup.1;
+    let f = tup.2;
+    println!("[perfect] {perfect} [one_hundred] {one_hundred} [f] {f}");
+
+    // array
+    let directions = ["North", "East", "South", "West"];
+    let east = directions[1];
+    println!("[1] {east}");
+
+    let all_u64: [u64; 10] = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
+    let all_zero = [0; 10];
+    println!("{all_u64:?}");
+    println!("{all_zero:?}");
 }
 
 #[test]

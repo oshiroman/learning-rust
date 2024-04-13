@@ -57,6 +57,28 @@ fn main() {
     let all_zero = [0; 10];
     println!("{all_u64:?}");
     println!("{all_zero:?}");
+
+    another_function(901);
+    another_function2(2401);
+
+    println!("{}", add(1834, 1905));
+}
+
+fn another_function(number: i32) {
+    println!("selected: {number}");
+}
+
+fn another_function2(number: i32) {
+    let y = {
+        let x = 20;
+        x + number
+    };
+
+    println!("y is {y}");
+}
+
+fn add(x: i32, y: i32) -> i32 {
+    return x + y
 }
 
 #[test]
